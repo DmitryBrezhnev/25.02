@@ -1,6 +1,6 @@
 <?php
 	//require another php file
-	require_once("../../../config.php");
+	require_once("../config.php");
 	
 	$everything_was_okay = true;
 	//*********************
@@ -50,6 +50,15 @@
 		
 		//connection with username and password
 		
+		$mysql = new mysqli("localhost", $db_webpr2016, $_webpr16, "Revenue calculator");
+		$stmt = $mysqli->prepare("
+		INSERT INTO messages_sample (recipient, message)
+		VALUES (?,?)
+		");
+		
+		
+		
+    $stmt->bind_param("ss", )
 		
 	}
 	
