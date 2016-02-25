@@ -1,4 +1,7 @@
 <?php
+	//require another php file
+	require_once("../../../config.php");
+	
 	$everything_was_okay = true;
 	//*********************
 	// TO field validation
@@ -43,7 +46,10 @@
 	// ? was everything okay
 	if($everything_was_okay == true){
 		
-		echo "Saving to database ...";
+		echo "Saving to database ... ";
+		
+		//connection with username and password
+		
 		
 	}
 	
