@@ -1,6 +1,6 @@
 <?php
 	//require another php file
-	require_once("../../config.php");
+	require_once("config.php");
 	
 	$everything_was_okay = true;
 	//*********************
