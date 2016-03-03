@@ -51,14 +51,14 @@
 		//connection with username and password
 		
 		$mysql = new mysqli("localhost", $db_webpr2016, $_webpr16, "Revenue calculator");
-		$stmt = $mysqli->prepare("
-		INSERT INTO messages_sample (recipient, message)
-		VALUES (?,?)
-		");
+		
+		$stmt = $mysql->prepare("INSERT INTO messages_sample (recipient, message) VALUES (?,?)");
+		
+		echo $mysql->error;
 		
 		
 		
-    $stmt->bind_param("ss", )
+    $stmt->bind_param("ss", $_GET["to"], $_GET["message"]);
 		
 	}
 	
